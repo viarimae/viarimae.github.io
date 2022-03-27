@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #B99976;
+  margin: auto;
+
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: justify;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 125px;
+  margin-left: 125px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#navbar a:hover {
+  background-color: #f2a65a;
+  color: white;
+  text-align: center;
+  margin-right: 125px;
+  margin-left: 125px;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+body {
+  height: auto; /* Used to enable scrolling */
+background:linear-gradient(rgba(246,191,137,1) 0%, rgba(254,201,143,1) 30%, rgba(255,180,128,1) 65%, rgba(255,160,113,1) 100%);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1{
+  color: white;
+  text-align: center;
+
+  font-size: 80px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2{
+  color: white;
+text-align: center;
+font-weight: bold;
+font-size: 48px;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+h3{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p{
+  color: white;
+  margin-left: 160px;
+  margin-right: 160px;
+  font-size: 16px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+p1{
+  color: white;
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 13px;
+  font-family: 'Source Code Pro', monospace;
+}
+#top{
+  color: white;
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 13px;
+  font-family: 'Source Code Pro', monospace;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul, li {
+  color: white;
+  margin-left: 160px;
+  margin-right: 160px;
+  font-size: 16px;
+  font-family: 'Source Code Pro', monospace;
+}
+.footer {
+  background-color: #F1F1F1;
+  opacity: 0.3;
+  text-align: center;
+  padding: 40px;
+}
+.flip-card {
+  background-color: transparent;
+ width: 400px;
+ height:400px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-back {
+  background-color: #A4D8D8;
+  color: white;
+  transform: rotateY(180deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+.flip-card-2 {
+  background-color: transparent;
+ width: 800px;
+ height:600px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.flip-card-inner-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-2:hover .flip-card-inner-2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-2, .flip-card-back-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-front-2 {
+  background-color: #bbb;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-back-2 {
+  background-color: #A4D8D8;
+  color: white;
+  transform: rotateY(180deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+.flip-card-3 {
+  background-color: transparent;
+  width: 770px;
+  height: 200px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-inner-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-3:hover .flip-card-inner-3 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-3, .flip-card-back-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-front-3 {
+  background-color: #bbb;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-back-3 {
+  background-color: #A4D8D8;
+  color: white;
+  transform: rotateY(180deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-4 {
+  background-color: transparent;
+ width: 554px;
+ height:875px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.flip-card-inner-4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-4:hover .flip-card-inner-4 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-4, .flip-card-back-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-front-4 {
+  background-color: #bbb;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-back-4 {
+  background-color: #A4D8D8;
+  color: white;
+  transform: rotateY(180deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+.flip-card-5 {
+  background-color: transparent;
+ width: 871px;
+ height:513px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.flip-card-inner-5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-5:hover .flip-card-inner-5 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-5, .flip-card-back-5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-front-5 {
+  background-color: #bbb;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-back-5 {
+  background-color: #A4D8D8;
+  color: white;
+  transform: rotateY(180deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+p5{
+  font-size: 48px
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+.scrollToTopBtn {
+  background-color: #ecc8af;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 48px;
+  line-height: 64px;
+  width: 64px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a{
+  color: #ffffff;
+}
